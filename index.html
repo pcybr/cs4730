@@ -13,69 +13,84 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Rajdhani|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bad+Script|Fredericka+the+Great|Kalam|Anton" rel="stylesheet">
 	</head>
 	<body class="index">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
+
 					<h1 id="logo"><a href="index.html">Arctic Thirst</a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
 							<li><a href="products.html">Our Products</a></li>
-							<li><a href="#" class="button special">Log In</a></li>
+							<li><a href="#">Log In</a></li>
+							<li><a href="contact.html" class="button special">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
 
 			<!-- Banner -->
 				<section id="banner">
+				<div class="banner-overlay">
+					
 
 					<!--
 						".inner" is set up as an inline-block so it automatically expands
 						in both directions to fit whatever's inside it. This means it won't
 						automatically wrap lines, so be sure to use line breaks where
 						appropriate (<br />).
+
 					-->
+
 					<div class="inner">
 
 						<header>
-							<h2>Arctic Thirst</h2>
+							<img src="images/ice.png" class="ice"/>
+							<h2>Freeze Your <span style="color: gold;">Thirst</span>.</h2>
 						</header>
-						<p>This is <strong>Arctic Thirst</strong>, an arctic
+						<p>This is <strong style="font-weight: 800;">Arctic Thirst</strong>, an arctic
 						<br />
-						glacier water company
+						glacier water company</p>
 						<footer>
 							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+								<li><a id="top-button" href="#main" class="button fit scrolly">Tell Me More</a></li>
 							</ul>
 						</footer>
 
 					</div>
+					</div>
+
 
 				</section>
-
+				<div class="arrow-up"></div>
 			<!-- Main -->
 				<article id="main">
 
-					<header class="special container">
-						<span class="icon fa-bar-chart-o"></span>
-						<h2><strong>Welcome to Arctic Thirst 
-						<br />
-						a revolutionary startup in the world of water. </strong>
-						<p> We journey to the the land of polar bears, the mainland of penguins, the frozen wasteland of seals,
-						<br />
-						to acquire the finest, purest, cleanest water this world has to offer.
-						<br />
-						Offering a range of water products from an array or glaciers,
-						<br />
-						we hope you enjoy!
-					</header>
+					<header class="special container" id="about">
+						<!-- <span class="icon fa-bar-chart-o"></span> -->
+						<img src="images/mountain.png" class="ice"/>
+							<h2 id="about-title"><strong>Welcome to <span style="color: gold;">Arctic Thirst</span>
+							</strong></h2>
+							<p id="about-main"> 
+							<br>
+							We are a revolutionary startup in the <strong>world of water</strong>. We journey to the the land of <strong>polar bears</strong>, the mainland of <strong>penguins</strong>, and the frozen wasteland of seals to acquire the <strong>finest, purest, cleanest water</strong> this world has to offer.
+							<br>
+							
+							<br>
+							We offer a wide range of water products from an array or glaciers,
+							<br>
+							We hope you enjoy!
+						</p>
+<!-- 						<img src="images/water.jpg"/>
+ -->					</header>
 
 					<!-- One -->
-						<section class="wrapper style2 container special-alt">
+						<!-- <section class="wrapper style2 container special-alt">
 							<div class="row 50%">
 								<div class="8u 12u(narrower)">
 
@@ -103,56 +118,59 @@
 
 								</div>
 							</div>
-						</section>
+						</section> -->
 
 					<!-- Two -->
+						<div class="facts-all">
 						<section class="wrapper style1 container special">
-							<div class="row">
+							<div class="row" id="facts">
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img src="images/rain.png" class="facts-icon"/>
 										<header>
-											<h3>This is Something</h3>
+											<h3 style="color: gold;">This is Something</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p style="color: white;">Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
 									</section>
 
 								</div>
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img src="images/run.png" class="facts-icon" id="run"/>
 										<header>
-											<h3>Also Something</h3>
+											<h3 style="color: gold;">Also Something</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p style="color: white;">Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
 									</section>
 
 								</div>
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<img src="images/heart.png" class="facts-icon" id="heart"/>
 										<header>
-											<h3>Probably Something</h3>
+											<h3 style="color: gold;">Probably Something</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+										<p style="color: white;">Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
 									</section>
 
 								</div>
 							</div>
 						</section>
+						</div>
 
 					<!-- Three -->
-						<section class="wrapper style3 container special">
+						<div class="product">
+						<section class="wrapper style3 container special" style="margin-bottom: 0;">
 
-							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
+							<header class="major" style="color: black; padding-bottom: 0;">
+								<h2>Our <strong style="color: gold; padding-bottom: 0;">Products</strong></h2>
 							</header>
 
-							<div class="row">
-								<div class="6u 12u(narrower)">
+							<!-- <div class="row"> -->
+								<!-- <div class="6u 12u(narrower)">
 
 									<section>
 										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -197,23 +215,29 @@
 										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
 									</section>
 
-								</div>
-							</div>
+								</div> -->
+								<p id="product-about">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<!-- <img src="images/pour.png"/> -->
+							<!-- </div> -->
 
 							<footer class="major">
 								<ul class="buttons">
-									<li><a href="#" class="button">See More</a></li>
+									<li><a href="#" class="button" style="color: black;">See More</a></li>
 								</ul>
 							</footer>
 
 						</section>
+						</div>
 
 				</article>
 
 			<!-- CTA -->
-				<section id="cta">
+				<section id="cta" style="padding: 0;">
+					<div class="cta-overlay">
 
-					<header>
+					<header style="padding-top: 3em;">
 						<h2>Ready to do <strong>something</strong>?</h2>
 						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
 					</header>
@@ -223,6 +247,7 @@
 							<li><a href="#" class="button">LOL Wut</a></li>
 						</ul>
 					</footer>
+					</div>
 
 				</section>
 
@@ -237,9 +262,9 @@
 						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
 					</ul>
 
-					<ul class="copyright">
+					<!-- <ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					</ul> -->
 
 				</footer>
 
