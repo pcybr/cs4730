@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Arctic Thirst</title>
@@ -28,8 +23,8 @@
 							<li><a href="index.html">Home</a></li>
 							<li class=""><a href="about.html">About Us</a></li> 
 							<!--<li> <a href="products.html">Our Products</a></li> -->
-							<li><a href="sign.html">Log In</a></li>
-							<li><a href="contact.html" class="button fit scrolly" style="color: gold">Sign Up</a></li>
+							<li class="current"><a href="sign.html">Log In</a></li>
+							<li><a href="contact.php" class="button fit scrolly" style="color: gold">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -39,36 +34,31 @@
 					<header class="special container">
 						<span class="icon fa-envelope"></span>
 						<img src="images/mountain.png" class="ice"/>
-						<h2>Become a member of Arctic Thirst</h2>
-						<p>Sign-up to earn exclusive deals on all of our products</p>
+						<h2>Welcome back to Arctic Thirst!</h2>
+						<p>Sign-in to view your cart and the deals you have earned!</p>
 					</header>
 
 					<!-- One -->
 						<section class="wrapper style4 special container 75%" style="margin-bottom: 100px !important; margin-top: -50px !important">
 
 							<!-- Content -->
-								<div class="content">
-									<form>
-										<div class="row 50%">
-											<div class="6u 12u(mobile)">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="6u 12u(mobile)">
-												<input type="text" name="email" placeholder="Email" />
+								<div class="content" style="text-align: center;">
+									<form action="verify.php" method="post">
+									
+										<div class="row">
+											<div class="12u">
+												<input type="email" name="email" placeholder="Email" required />
 											</div>
 										</div>
-										<div class="row 50%">
-											<div class="6u 12u(mobile)">
-												<input type="text" name="passowrd" placeholder="Password"/>
-											</div>
-											<div class="6u 12u(mobile)">
-												<input type="text" name="confirm" placeholder="Confirm Password">
+										<div class="row" style="">
+											<div class="12u">
+												<input type="password" name="password" placeholder="Password" required />
 											</div>
 										</div>
 										<div class="row">
 											<div class="12u">
-												<ul class="buttons">
-													<li><input type="submit" class="button fit scrolly" value="Join Now!" style="width: 80%; color: gold;" /></li>
+												<ul class="">
+													<li><input type="submit" class="button fit scrolly" value="Sign-in" style="width: 50%; color: gold" /></li>
 												</ul>
 											</div>
 										</div>
