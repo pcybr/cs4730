@@ -151,7 +151,7 @@
 						</section> -->
 
 					<!-- Two -->
-					<!--	<div class="facts-all">
+					<div class="facts-all">
 						<section class="wrapper style1 container special">
 							<div class="row" id="facts">
 								<div class="4u 12u(narrower)">
@@ -196,7 +196,7 @@
 							</div>
 						</section>
 						</div>
-						-->
+						
 
 					<!-- Three -->
 						<div class="product">
