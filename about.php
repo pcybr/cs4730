@@ -106,6 +106,13 @@
 											<h4 style="color: black; margin-top: -20px;">Strategy Lead</h4>
 										</header>
 										<p style="color: black;">Nic has loved Arctic Thirst ever since he started using it to hydrate. He knows people everywhere can benefit from our water, and is on a mission to make that happen.</p>
+										<?php
+										<form action="https://bitpay.com/checkout" method="post" >
+  											<input type="hidden" name="action" value="cartAdd" />
+  											<input type="hidden" name="data" value="Bu8gKMj3b6jcdyNfHU3vp5" />
+  											<input type="image" src="https://bitpay.com/img/button1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." >
+										</form>
+										?>
 									</section>
 
 								</div>
