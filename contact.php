@@ -21,7 +21,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li class=""><a href="about.php">About Us</a></li> 
+							<li class=""><a href="about.php">About Us</a></li>
 							<!--<li> <a href="products.html">Our Products</a></li> -->
 							<li><a href="sign.html">Log In</a></li>
 							<li><a href="contact.php" class="button fit scrolly" style="color: gold">Sign Up</a></li>
@@ -41,6 +41,7 @@
 					<!-- One -->
 						<section class="wrapper style4 special container 75%" style="margin-bottom: 100px !important; margin-top: -50px !important">
 						<?php include 'database.php';
+
 				// create a variable
 						if($_POST){
 							$name=$_POST['name'];
@@ -70,22 +71,21 @@
 							    mysqli_query($connect, "INSERT INTO siteUsers(name, email, password, address, city, state, zip)
 											VALUES('$name','$email','$password_Hash','$address', '$city', '$states', '$zip')");
 							    echo "<h2 style='color: green;'>New user created!</h2>";
-								
-								 
+
+
 								 // Import PHPMailer classes into the global namespace
 								// These must be at the top of your script, not inside a function
-								use PHPMailer\PHPMailer\PHPMailer;
-								use PHPMailer\PHPMailer\Exception;
+
 
 								//Load composer's autoloader
-								require 'vendor/autoload.php';
+								require 'class.pop3/PHPMailerAutoload.php';
 
-								$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+								$mail = new PHPMailer;                              // Passing `true` enables exceptions
 								try {
 								    //Server settings
-								    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+								    //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
 								    $mail->isSMTP();                                      // Set mailer to use SMTP
-								    $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+								    $mail->Host = 'smtp.gmail.com;smtp1.gmail.com';  // Specify main and backup SMTP servers
 								    $mail->SMTPAuth = true;                               // Enable SMTP authentication
 								    $mail->Username = 'ntuz96@gmail.com';                 // SMTP username
 								    $mail->Password = 'Hockey11';                           // SMTP password
@@ -94,15 +94,11 @@
 
 								    //Recipients
 								    $mail->setFrom('ntuz96@gmail.com', 'Mailer');
-								    $mail->addAddress('nat5ds@virginia.edu', 'Joe User');     // Add a recipient
-								    $mail->addAddress('nat5ds@virginia.edu');               // Name is optional
-								    $mail->addReplyTo('info@example.com', 'Information');
-								    $mail->addCC('cc@example.com');
-								    $mail->addBCC('bcc@example.com');
+								    $mail->addAddress($email, $name);     // Add a recipient
 
 								    //Attachments
-								    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-								    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+								   // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+								    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
 								    //Content
 								    $mail->isHTML(true);                                  // Set email format to HTML
@@ -116,11 +112,11 @@
 								    echo 'Message could not be sent.';
 								    echo 'Mailer Error: ' . $mail->ErrorInfo;
 								}
-								 
+
 							  }
 
 						}
-							?>			
+							?>
 
 							<!-- Content -->
 								<div class="content">
@@ -145,7 +141,7 @@
 											<div class = "6u 12u(mobile)">
 												<input type="text" name="city" placeholder="City" pattern="[A-Za-z.\s]{1,}" title = "Only use alphabetical characters."required />
 											</div>
-											
+
 										</div>
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
@@ -202,7 +198,7 @@
 													<option value="WV">West Virginia</option>
 													<option value="WI">Wisconsin</option>
 													<option value="WY">Wyoming</option>
-												</datalist>		
+												</datalist>
 											</div>
 											<div class="6u 12u(mobile)">
 												<input type="text" name="zip" minlength="5" maxlength="5" placeholder="Zip-Code" pattern="[0-9]{5}" required>
