@@ -298,12 +298,12 @@
 								<!-- <img src="images/pour.png"/> -->
 							<!-- </div> -->
 
-							<footer class="major" style="text-align: center;">
+							<!--footer class="major" style="text-align: center;">
 								<ul class="buttons" style="margin: 0 auto; margin-bottom: 50px; margin-top: -50px;">
 									<li><a href="#" class="button" style="color: black; left: 50%">Get Hydrated</a></li>
 								</ul>
 							</footer>
-
+							-->
 						</section>
 						</div>
 
