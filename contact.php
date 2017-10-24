@@ -69,7 +69,7 @@
 							  {
 							    mysqli_query($connect, "INSERT INTO siteUsers(name, email, password, address, city, state, zip)
 											VALUES('$name','$email','$password_Hash','$address', '$city', '$states', '$zip')");
-							    echo "<h2 style='color: green;'>New user created!</h2>";
+							    //echo "<h2 style='color: green;'>New user created!</h2>";
 								
 								 // Import PHPMailer classes into the global namespace
 								// These must be at the top of your script, not inside a function
