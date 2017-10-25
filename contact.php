@@ -22,7 +22,8 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li class=""><a href="about.php">About Us</a></li>
-							<!--<li> <a href="products.html">Our Products</a></li> -->
+							<li><a href="newsletter.php">News</a></li>
+							<li> <a href="products.php">Our Products</a></li>
 							<li><a href="sign.html">Log In</a></li>
 							<li><a href="contact.php" class="button fit scrolly" style="color: gold">Sign Up</a></li>
 						</ul>
@@ -219,7 +220,23 @@
 				</article>
 
 			<!-- Footer -->
-				<footer id="footer">
+			<footer class="footer">
+
+				<ul class="icons">
+					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+				</ul>
+
+				<p class="copyright">Copyright © Arctic Thirst Glacier Water. 2017 All Rights Reserved.</p>
+
+				<!-- <ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul> -->
+
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

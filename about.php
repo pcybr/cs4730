@@ -20,8 +20,9 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li class="current"><a href="about.html">About Us</a></li> 
-							<!--<li> <a href="products.html">Our Products</a></li> -->
+							<li class="current"><a href="about.html">About Us</a></li>
+							<li><a href="newsletter.php">News</a></li>
+							<li> <a href="products.html">Our Products</a></li>
 							<li><a href="sign.html">Log In</a></li>
 							<li><a href="contact.php" class="button fit scrolly" style="color: gold;">Sign Up</a></li>
 						</ul>
@@ -30,8 +31,8 @@
 
 			<!-- Banner -->
 				<section id="banner">
-				<div class="about-overlay">
-					
+				<div class="banner-overlay">
+
 
 					<!--
 						".inner" is set up as an inline-block so it automatically expands
@@ -67,7 +68,7 @@
 						<img src="images/mountain.png" class="ice"/>
 							<h2 id="about-title"><strong>Meet the <span style="color: white;">Team</span>
 							</strong></h2>
-							<p id="about-main"> 
+							<p id="about-main">
 							<br>
 							Here at <b>Arctic Thirst</b>, we value the people who dare to do more. We feel as if our product allows people to be better. Our water is all natural, and is better tasting and better for you than your generic water. In short, these glaciers brewed up something special, and we want the world to enjoy our product.
 							<br>
@@ -106,7 +107,7 @@
 											<h4 style="color: black; margin-top: -20px;">Strategy Lead</h4>
 										</header>
 										<p style="color: black;">Nic has loved Arctic Thirst ever since he started using it to hydrate. He knows people everywhere can benefit from our water, and is on a mission to make that happen.</p>
-										
+
 										<!--form action="https://bitpay.com/checkout" method="post" >
   											<input type="hidden" name="action" value="cartAdd" />
   											<input type="hidden" name="data" value="Bu8gKMj3b6jcdyNfHU3vp5" />
@@ -119,7 +120,7 @@
 							</div>
 						</section>
 						</div>
-						</p>
+
 <!-- 						<img src="images/water.jpg"/>
  -->					</header>
 
@@ -162,7 +163,7 @@
 											<h3 style="color: gold;"><b>Snow Hil</b></h3>
 										</header>
 										<p style="color: black;">Our Snow Hill water is one of our most popular drinks, containing minerals that are soothing for the mind. The water comes from Snow Hill Island, a popular penguin hangout in Antarctica</p
-						
+
 									</section>
 
 								</div>
@@ -194,143 +195,28 @@
 						-->
 
 					<!-- Three -->
-						<div class="product">
-						<section class="wrapper style3 container special" style="margin-bottom: 0;">
 
-							<header class="major" style="color: black; padding-bottom: 0;">
-								<h2>Our <strong style="color: gold; padding-bottom: 0;">Products</strong></h2>
-							</header>
-
-							<!-- <div class="row"> -->
-								<!-- <div class="6u 12u(narrower)">
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>A Really Fast Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-								</div>
-								<div class="6u 12u(narrower)">
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>An Airport Terminal</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-								</div>
-							</div>
-							<div class="row">
-								<div class="6u 12u(narrower)">
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Hyperspace Travel</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-								</div>
-								<div class="6u 12u(narrower)">
-									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>And Another Train</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-									</section>
-								</div> -->
-								<p id="product-about">
-								Here are a few of our most popular products we have to offer, each from their own glacial region. Each drink were naturally infused with nutrients in their respective regions to provide differnt health benefits. Take a look and take a taste of what we have to offer:
-								</p>
-							
-								<?php  
-								  $url = "https://bitpay.com/api/rates";
-
-								  $json = file_get_contents($url);
-								  $data = json_decode($json, TRUE);
-
-								  $rate = $data[1]["rate"];    
-								  $usd_price = 10;     # Let cost of elephant be 10$
-								  $bitcoin_price = round( $usd_price / $rate , 8 );
-								?>
-								<?php echo "<ul> <li> Price: $usd_price $ / $bitcoin_price BTC </ul>"; 
-								?>
-							
-							
-								<div class="row" id="facts">
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<img src="images/pen.png" class="facts-icon"/>
-										<header>
-											<h3 style="color: gold;"><b>Snow Hil</b></h3>
-										</header>
-										<p style="color: black;">Our Snow Hill water is one of our most popular drinks, containing minerals that are soothing for the mind. The water comes from Snow Hill Island, a popular penguin spot in Antarctica</p>
-										<form action="https://bitpay.com/checkout" method="post" >
-  											<input type="hidden" name="action" value="cartAdd" />
-  											<input type="hidden" name="data" value="Bu8gKMj3b6jcdyNfHU3vp5" />
-  											<input type="image" src="https://bitpay.com/img/button1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." >
-										</form>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<img src="images/iceberg.png" class="facts-icon" id="run"/>
-										<header>
-											<h3 style="color: gold;"><b>Revive</b></h3>
-										</header>
-										<p style="color: black;">Revive is captured from Thwaites Glacier, the underbelly in the west Antarctic Sea. This beverage is known for helping athletes naturally replenish electrolytes late in the game.</p>
-										<form action="https://bitpay.com/checkout" method="post" >
-  											<input type="hidden" name="action" value="cartAdd" />
- 											<input type="hidden" name="data" value="EpHPzs95x3EtMM8TEEh7tH" />
- 											<input type="image" src="https://bitpay.com/img/button1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." >
-										</form>
-									</section>
-
-								</div>
-								<div class="4u 12u(narrower)">
-
-									<section>
-										<img src="images/torres.png" class="facts-icon" id="heart"/>
-										<header>
-											<h3 style="color: gold;"><b>Torres</b></h3>
-										</header>
-										<p style="color: black;">Striaght from Torres del Paine in Patagonia, Torres is our northernmost drink. It's taste is unparalleled. Simply water at its finest.</p>
-										<form action="https://bitpay.com/checkout" method="post" >
-  											<input type="hidden" name="action" value="cartAdd" />
- 											<input type="hidden" name="data" value="82kWbeyScYBJfPMuEm6yew" />
- 											<input type="image" src="https://bitpay.com/img/button1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." >
-										</form>
-									</section>
-
-								</div>
-							</div>
-							</section>
-								<!-- <img src="images/pour.png"/> -->
-							<!-- </div> -->
-
-							<!--footer class="major" style="text-align: center;">
-								<ul class="buttons" style="margin: 0 auto; margin-bottom: 50px; margin-top: -50px;">
-									<li><a href="#" class="button" style="color: black; left: 50%">Get Hydrated</a></li>
-								</ul>
-							</footer>
-							-->
-						</section>
-						</div>
 
 				</article>
 
 			<!-- Footer -->
-				<footer id="footer">
+			<footer class="footer">
 
-					<!-- <ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul> -->
+				<ul class="icons">
+					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+				</ul>
 
-				</footer>
+				<p class="copyright">Copyright © Arctic Thirst Glacier Water. 2017 All Rights Reserved.</p>
+
+				<!-- <ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul> -->
+
+			</footer>
 
 		</div>
 
