@@ -22,7 +22,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li class="current"><a href="about.html">About Us</a></li>
 							<li><a href="newsletter.php">News</a></li>
-							<li> <a href="products.html">Our Products</a></li>
+							<li> <a href="products.php">Our Products</a></li>
 							<li><a href="sign.html">Log In</a></li>
 							<li><a href="contact.php" class="button fit scrolly" style="color: gold;">Sign Up</a></li>
 						</ul>
@@ -30,7 +30,7 @@
 				</header>
 
 			<!-- Banner -->
-				<section id="banner">
+			<section class="banner">
 				<div class="banner-overlay">
 
 

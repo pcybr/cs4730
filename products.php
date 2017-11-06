@@ -20,7 +20,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Us</a></li>
+							<li><a href="about.php">About Us</a></li>
 							<li><a href="newsletter.php">News</a></li>
 							<li class="current"> <a href="products.php">Our Products</a></li>
 							<li><a href="sign.html">Log In</a></li>
@@ -30,7 +30,7 @@
 				</header>
 
 			<!-- Banner -->
-				<section id="banner">
+			<section class="banner">
 				<div class="banner-overlay">
 
 

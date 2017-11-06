@@ -25,7 +25,7 @@
 							<li><a href="newsletter.php">News</a></li>
 							<li> <a href="products.php">Our Products</a></li>
 							<li><a href="sign.html">Log In</a></li>
-							<li><a href="contact.php" class="button fit scrolly" style="color: gold">Sign Up</a></li>
+							<li class="current"><a href="contact.php" class="button fit scrolly" style="color: gold">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -238,6 +238,7 @@
 
 			</footer>
 
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>

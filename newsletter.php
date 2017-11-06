@@ -31,7 +31,7 @@
       </header>
 
     <!-- Banner -->
-      <section id="banner">
+		<section class="banner">
       <div class="banner-overlay">
 
 
