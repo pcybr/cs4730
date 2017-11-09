@@ -94,7 +94,7 @@
 								    $mail->Port = 587;                                    // TCP port to connect to
 
 								    //Recipients
-								    $mail->setFrom('ntuz96@gmail.com', 'Mailer');
+								    $mail->setFrom('ntuz96@gmail.com', 'Arctic Thirst');
 								    $mail->addAddress($email, $name);     // Add a recipient
 
 								    //Attachments
@@ -103,9 +103,9 @@
 
 								    //Content
 								    $mail->isHTML(true);                                  // Set email format to HTML
-								    $mail->Subject = 'Here is the subject';
-								    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-								    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+								    $mail->Subject = 'Welcome to Arctic Thirst';
+								    $mail->Body    = 'We are really excited to have on board with <b>Arctic Thirst!</b>';
+								    $mail->AltBody = 'We are really excited to have on board with <b>Arctic Thirst!</b>';
 
 								    $mail->send();
 								    echo 'Message has been sent';
@@ -124,29 +124,35 @@
 									<form action="" method="post">
 										<div class="row">
 											<div class="12u">
+												<label style="float: left;">Name</label>
 												<input type="text" name="name" placeholder="Name" pattern="[A-Za-z\s]{1,}" title="Alphabetical characters please." required/>
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
+												<label style="float: left;">Email</label>
 												<input type="email" name="email" placeholder="Email" required/>
 											</div>
 											<div class="6u 12u(mobile)">
+												<label style="float: left;">Password</label>
 												<input type="password" name="password" placeholder="Password" required/>
 											</div>
 										</div>
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
+												<label style="float: left;">Address</label>
 												<input type="text" name="address" placeholder="Address" pattern="[A-Za-z0-9.\s]{1,}" title = "Do not use special characters." required />
 											</div>
 											<div class = "6u 12u(mobile)">
-												<input type="text" name="city" placeholder="City" pattern="[A-Za-z.\s]{1,}" title = "Only use alphabetical characters."required />
+												<label style="float: left;">City</label>
+												<input type="text" name="city" placeholder="City" pattern="[A-Za-z.\s]{1,}" title = "Only use alphabetical characters." required />
 											</div>
 
 										</div>
 										<div class="row 50%">
 											<div class="6u 12u(mobile)">
-												<input type="text" name="states" list="states" placeholder="State" pattern="[A-Za-z]{1,}" required />
+												<label style="float: left;">State (Abbr.)</label>
+												<input type="text" name="states" list="states" placeholder="State" pattern="[A-Za-z]{2}" minlength="2" maxlength="2" required />
 												<datalist id="states" name="states" placeholder="States" required/>
 													<option value="AL">Alabama</option>
 													<option value="AK">Alaska</option>
@@ -202,6 +208,7 @@
 												</datalist>
 											</div>
 											<div class="6u 12u(mobile)">
+												<label style="float: left;">Zip-Code</label>
 												<input type="text" name="zip" minlength="5" maxlength="5" placeholder="Zip-Code" pattern="[0-9]{5}" required>
 											</div>
 										</div>
