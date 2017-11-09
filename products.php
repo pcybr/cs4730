@@ -30,7 +30,7 @@
 				</header>
 
 			<!-- Banner -->
-			<section class="banner">
+				<section class="banner">
 				<div class="banner-overlay">
 
 
@@ -50,7 +50,7 @@
 						<p>Explore our products and <br />find the drink that suits<strong style="font-weight: 800;"> you</strong></p>
 						<footer>
 							<ul class="buttons vertical">
-								<li><a id="top-button" href="#main" class="button fit scrolly">Meet the team</a></li>
+								<li><a id="top-button" href="#main" class="button fit scrolly">Get hydrated</a></li>
 							</ul>
 						</footer>
 
@@ -86,10 +86,11 @@
 								  $usd_price = 10;     # Let cost of elephant be 10$
 								  $bitcoin_price = round( $usd_price / $rate , 8 );
 								?>
-								<?php echo "<ul> <li> Price: $usd_price $ / $bitcoin_price BTC </li> </ul>";
+								<p></p>
+								<?php echo "<b><ul> <li> Price: $$usd_price / $bitcoin_price BTC </li> </ul></b>";
 								?>
 
-
+								<p style="margin-bottom: -50px;"></p>
 								<div class="row" id="facts">
 								<div class="4u 12u(narrower)">
 
@@ -99,9 +100,12 @@
 											<h3 style="color: gold;"><b>Snow Hill</b></h3>
 										</header>
 										<p style="color: black; height: 200px;">Our Snow Hill water is one of our most popular drinks, containing minerals that are soothing for the mind. The water comes from Snow Hill Island, a popular penguin spot in Antarctica</p>
-										<form action="https://bitpay.com/checkout" method="post" >
+										<!--<form action="https://bitpay.com/checkout" method="post" >
   											<input type="hidden" name="action" value="cartAdd" />
-  											<input type="hidden" name="data" value="Bu8gKMj3b6jcdyNfHU3vp5" />
+  											<input type="hidden" name="data" value="Bu8gKMj3b6jcdyNfHU3vp5" /> -->
+  										<form action="https://test.bitpay.com/checkout" method="post" >
+ 											<input type="hidden" name="action" value="cartAdd" />
+ 											<input type="hidden" name="data" value="RKaCamoyZ2inxRomwrSLpG" />
   											<input type="image" src="bitcoin1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." style="width: 100px;
     										border: 1px solid #676161;
     										padding: 10px;"	class="pay_button">
@@ -117,9 +121,12 @@
 											<h3 style="color: gold;"><b>Revive</b></h3>
 										</header>
 										<p style="color: black; height: 200px;">Revive is captured from Thwaites Glacier, the underbelly in the west Antarctic Sea. This beverage is known for helping athletes naturally replenish electrolytes late in the game.</p>
-										<form action="https://bitpay.com/checkout" method="post">
+										<!--<form action="https://bitpay.com/checkout" method="post">
   											<input type="hidden" name="action" value="cartAdd" />
- 											<input type="hidden" name="data" value="EpHPzs95x3EtMM8TEEh7tH" />
+ 											<input type="hidden" name="data" value="EpHPzs95x3EtMM8TEEh7tH" /> -->
+ 										<form action="https://test.bitpay.com/checkout" method="post" >
+  											<input type="hidden" name="action" value="cartAdd" />
+  											<input type="hidden" name="data" value="XgpDdtiB88riDNdLgejRwg" />
  											<input type="image" src="bitcoin1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." style="width: 100px;
 											border: 1px solid #676161;
 											padding: 10px;"	class="pay_button">
@@ -135,9 +142,12 @@
 											<h3 style="color: gold;"><b>Torres</b></h3>
 										</header>
 										<p style="color: black; height: 200px;">Striaght from Torres del Paine in Patagonia, Torres is our northernmost drink. It's taste is unparalleled. Simply water at its finest.</p>
-										<form action="https://bitpay.com/checkout" method="post" >
+										<!--<form action="https://bitpay.com/checkout" method="post" >
   											<input type="hidden" name="action" value="cartAdd" />
- 											<input type="hidden" name="data" value="82kWbeyScYBJfPMuEm6yew" />
+ 											<input type="hidden" name="data" value="82kWbeyScYBJfPMuEm6yew" /> -->
+ 										<form action="https://test.bitpay.com/checkout" method="post" >
+  											<input type="hidden" name="action" value="cartAdd" />
+  											<input type="hidden" name="data" value="Cbg4RxiUnWE2jCPCUu3kj7" />
  											<input type="image" src="bitcoin1.png" border="0" name="submit" alt="BitPay, pay with bitcoins." style="width: 100px;
 											border: 1px solid #676161;
 											padding: 10px;" class="pay_button">
