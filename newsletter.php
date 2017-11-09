@@ -31,7 +31,7 @@
       </header>
 
     <!-- Banner -->
-		<section class="banner">
+      					<section class="banner">
       <div class="banner-overlay">
 
 
@@ -85,7 +85,7 @@
 
 							//Execute the query
 
-							$query = mysqli_query($connect, "SELECT email FROM siteUsers WHERE email='$email'");
+							$query = mysqli_query($connect, "SELECT email1 FROM subs WHERE email1='$email'");
 
 							 if (mysqli_num_rows($query) > 0)
 							  {
@@ -97,7 +97,7 @@
 
 							 else
 							  {
-							    mysqli_query($connect, "INSERT INTO siteUsers(name, email)
+							    mysqli_query($connect, "INSERT INTO subs(name1, email1)
 											VALUES('$name','$email')");
 							    echo "<h2 style='color: green;'>Subsribed!</h2>";
 
@@ -122,7 +122,7 @@
 								    $mail->Port = 587;                                    // TCP port to connect to
 
 								    //Recipients
-								    $mail->setFrom('ntuz96@gmail.com', 'Mailer');
+								    $mail->setFrom('ntuz96@gmail.com', 'Arcitc Thirst');
 								    $mail->addAddress($email, $name);     // Add a recipient
 
 								    //Attachments
@@ -131,9 +131,9 @@
 
 								    //Content
 								    $mail->isHTML(true);                                  // Set email format to HTML
-								    $mail->Subject = 'Here is the subject';
-								    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-								    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+								    $mail->Subject = 'Thanks for subscribing!';
+								    $mail->Body    = 'You will be updated with everything Arctic Thirst!';
+								    $mail->AltBody = 'You will be updated with everything Arctic Thirst!';
 
 								    $mail->send();
 								    echo 'Message has been sent';
